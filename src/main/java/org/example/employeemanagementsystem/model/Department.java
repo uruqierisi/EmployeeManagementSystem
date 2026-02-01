@@ -2,17 +2,17 @@ package org.example.employeemanagementsystem.model;
 
 import java.util.Date;
 
-public class Departament {
+public class Department {
 
     private int departmentId;
     private String departmentName;
     private String location;
     private Date createdDate;
 
-    public Departament() {
+    public Department() {
     }
 
-    public Departament(String departmentName, String location){
+    public Department(String departmentName, String location){
         this.departmentName = departmentName;
         this.location = location;
     }

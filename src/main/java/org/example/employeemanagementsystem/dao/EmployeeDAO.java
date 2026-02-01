@@ -145,9 +145,9 @@ public class EmployeeDAO {
         String sql = "{CALL sp_GetAllEmployees()}";
 
         try (Connection conn = DbConnection.connect();
-             PreparedStatement st = conn.prepareStatement(sql)) {
+             PreparedStatement st = conn.prepareCall(sql);
+             ResultSet rs = st.executeQuery()) {
 
-            ResultSet rs = st.executeQuery();
 
             while (rs.next()) {
                 Employee employee = new Employee();
