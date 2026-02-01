@@ -9,7 +9,7 @@ public class Employee {
     private String email;
     private String phoneNumber;
     private double salary;
-    private String departmentId;
+    private int departmentId;
     private int roleId;
     private Date hireDate;
     private boolean isActive;
@@ -21,7 +21,7 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(String firstName, String lastName, String email, String phoneNumber, double salary, String departmentId, int roleId, Date hireDate, boolean isActive) {
+    public Employee(String firstName, String lastName, String email, String phoneNumber, double salary, int departmentId, int roleId, Date hireDate, boolean isActive) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -81,11 +81,11 @@ public class Employee {
         this.salary = salary;
     }
 
-    public String getDepartmentId() {
+    public int getDepartmentId() {
         return departmentId;
     }
 
-    public void setDepartmentId(String departmentId) {
+    public void setDepartmentId(int departmentId) {
         this.departmentId = departmentId;
     }
 
