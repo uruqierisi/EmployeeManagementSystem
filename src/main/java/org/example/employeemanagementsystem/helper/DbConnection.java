@@ -19,7 +19,7 @@ public class DbConnection {
         }
     }
 
-    // ✅ MAIN method – tani file mundet me u RUN
+
     public static void main(String[] args) {
         try (Connection conn = connect()) {
             System.out.println("✅ Connected to SQL Server successfully!");
