@@ -139,7 +139,7 @@ public class Employee {
 
     @Override
     public String toString() {
-       return String.format("ID: $d | Name: %s %s | Email: %s | Department: %s | Role: %s | Salary: %.2f ",
+       return String.format("ID: %d | Name: %s %s | Email: %s | Department: %s | Role: %s | Salary: %.2f ",
                employeeId, firstName, lastName, email, departmentName, roleName, salary);
            }
 }
