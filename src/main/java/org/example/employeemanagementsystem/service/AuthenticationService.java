@@ -11,9 +11,7 @@ public class AuthenticationService {
         this.userDAO = new UserDAO();
     }
 
-    /**
-     * Login user with username and password
-     */
+    // logini me userpw
     public User login(String username, String password) {
         // Validation
         if (username == null || username.trim().isEmpty()) {
@@ -54,9 +52,7 @@ public class AuthenticationService {
         return user;
     }
 
-    /**
-     * Logout user
-     */
+    // logout
     public void logout(User user) {
         if (user != null) {
             System.out.println("Goodbye, " + user.getUsername() + "!");
