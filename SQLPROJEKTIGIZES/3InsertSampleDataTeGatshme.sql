@@ -28,6 +28,6 @@ GO
 
 -- Insert Users (Admin and Regular User)
 INSERT INTO [User] (username, password, employeeId, userRoleId) VALUES
-('admin', 'admin123', 1, 1),      -- Admin user
-('john_doe', 'pass123', 2, 2);    -- Regular user
+('admin', 'admin', 1, 1),      -- Admin user
+('elion', 'elion', 2, 2);    -- Regular user
 GO

@@ -336,7 +336,7 @@ public class MainMenu {
     // logout
     private void logout(){
         System.out.println("---- Logout ---");
-        System.out.println("Goodbye, + " + currentUser.getUsername() + "!");
+        System.out.println("Goodbye, " + currentUser.getUsername() + "!");
     }
 }
 
