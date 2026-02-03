@@ -51,8 +51,12 @@ public class Role {
     }
 
     @Override
-    public String toString(){
-        return String.format("ID: $d | Name: %s | Description: %s",
-                roleId, roleName, description);
+    public String toString() {
+        String desc = (description != null && !description.isEmpty())  ///  error chati ma ndreqi respekt e.u
+                ? description
+                : "No description available";
+
+        return String.format("ID: %d | Name: %s | Description: %s",
+                roleId, roleName, desc);
     }
 }

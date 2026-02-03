@@ -51,7 +51,7 @@ public class Department {
 
     @Override
     public String toString(){
-        return String.format("ID: $d | Name: %s | Location: %s",
+        return String.format("ID: %d | Name: %s | Location: %s",
                 departmentId, departmentName, location);
     }
 }
